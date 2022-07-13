@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_attributes_effects",
+  "info": {
+    "displayName": "Effect",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "HP",
+        "PP",
+        "MEL Pot%",
+        "RNG Pot%",
+        "TEC Pot%",
+        "Pot Floor%",
+        "Dmg Resist%",
+        "Burn Resist%",
+        "Freeze Resist%",
+        "Shock Resist%",
+        "Blind Resist%",
+        "Panic Resist%",
+        "Poison Resist%",
+        "Pain Resist%",
+        "All Resist%",
+        "EXP Grind",
+        "Fire Pot%",
+        "Ice Pot%",
+        "Lightning Pot%",
+        "Wind Pot%",
+        "Light Pot%",
+        "Dark Pot%",
+        "Low Temp Resist%",
+        "Daytime Pot%",
+        "Nighttime Pot%"
+      ],
+      "required": true,
+      "default": "HP"
+    },
+    "value": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

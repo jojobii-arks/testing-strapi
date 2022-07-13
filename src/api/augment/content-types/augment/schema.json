@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "augments",
+  "info": {
+    "singularName": "augment",
+    "pluralName": "augments",
+    "displayName": "Augment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "battlePower": {
+      "type": "decimal"
+    },
+    "effects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "attributes.effect"
+    },
+    "augment_slot": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::augment-slot.augment-slot",
+      "inversedBy": "augments"
+    }
+  }
+}

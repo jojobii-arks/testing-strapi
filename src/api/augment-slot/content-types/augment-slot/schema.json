@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "augment_slots",
+  "info": {
+    "singularName": "augment-slot",
+    "pluralName": "augment-slots",
+    "displayName": "Augment Slot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "augments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::augment.augment",
+      "mappedBy": "augment_slot"
+    }
+  }
+}
